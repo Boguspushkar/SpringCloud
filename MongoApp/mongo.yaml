@@ -22,12 +22,12 @@ spec:
           valueFrom:
             secretKeyRef:
               name: mongodb-secret
-              key: monog-root-username
+              key: mongo-root-username
         - name: MONGO_INITDB_ROOT_PASSWORD
           valueFrom:
             secretKeyRef:
               name: mongodb-secret
-              key: mango-root-password
+              key: mongo-root-password
 ---
 apiVersion: v1
 kind: Service
